@@ -1,9 +1,9 @@
-const amount  = 18
+const {mit , harvard , stanford } = require('./app.js');
 
-if(amount < 10) {
-    console.log("small number")
+function whatItDo (college) {
+    console.log(`${college.name} is valid? ${college.ball} .... the ratio is ${college.ratio}`);
+    college.pukeNRally();
 }
-else {
-    console.log("Big number")
-}
-console.log("first node.js program kinda ")
+whatItDo(mit);
+whatItDo(harvard);
+whatItDo(stanford);
